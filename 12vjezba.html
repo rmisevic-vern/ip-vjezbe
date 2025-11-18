@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="Hr">
+<head><title> Kolokvij</title>
+<meta charset="utf-8">
+<meta name="author"content="Ruža Mišević">
+<meta name="keywords"content="html">
+<meta name="viewport"content="width=device withd, initial-scale=1.0">
+</head>
+
+<body>
+    <form action="adduser.php"method="post">
+        <div style="margin: 20px 0">
+            <label for="ime">Ime:</label> <br>
+            <input type="text"id="ime"name="ime"required placeholder="Vaše ime">
+        </div>
+
+        <div style="margin: 20px 0">
+            <label for="Prezime">Prezime:</label> <br>
+            <input type="text"id="Prezime"name="prezime"required placeholder="Vaše prezime">
+        </div>
+
+        <div style="margin: 20px 0">
+            <label for="email">E-mail</label> <br>
+            <input type="email" name="email" id="email"required placeholder="E-mail">
+        </div>
+
+        <div style="margin: 20px 0">
+            <label for="Države">Država</label> <br>
+            <select name="Države" id="Države">
+                <option value="">Molimo odaberite</option>
+                <option value="HR">Hrvatska</option>
+                <option value="SLO">Slovenia</option>
+                <option value="Bih">Bosna i Hecegovina</option>
+            </select>
+        </div>
+    
+        <div style="margin:20px 0">
+            <label for="Note">Poruka:</label> <br>
+           <textarea name="Note" id="Note"placeholder="Unesite Vašu poruku"></textarea>
+        </div>
+
+        <div style="margin: 20 px 0">
+            <input type="submit"value="Pošalji">
+            <input type="reset"value="Poništi">
+        </div>
+        
+    </form>
+</body>
+</html>
